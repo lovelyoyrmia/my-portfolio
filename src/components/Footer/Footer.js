@@ -1,5 +1,7 @@
 import React from "react";
+// import myResume from "../../resume/CV_Lovelyo_Yeremia_Mokalu.pdf";
 import { FooterStyles, FooterWrapper } from "./FooterStyles";
+// import jsPDF from "jspdf";
 import {
   FcOpenedFolder,
   FcPrint,
@@ -8,9 +10,12 @@ import {
   FcBinoculars,
 } from "react-icons/fc";
 import ReactTooltip from "react-tooltip";
-import { Link } from "react-router-dom";
 
 function Footer() {
+  // const pdfGenerate = () => {
+  //   var doc = new jsPDF("potrait", "px", "a4", "false");
+  //   // doc.
+  // };
   return (
     <FooterStyles>
       <FooterWrapper>
