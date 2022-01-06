@@ -14,26 +14,28 @@ function Nav() {
     setCtime(time);
   }, 1000);
   return (
-    <NavStyles>
-      <Div1>
-        <div>
-          <img /> <span>Lovelyo Yeremia</span>
-        </div>
-        <Div1Child>File</Div1Child>
-        <Div1Child>Help</Div1Child>
-        <Div1Child>Settings</Div1Child>
-        <HiArrowCircleDown
-          className="icon-arrow"
-          onClick={() => setClick(!click)}
-        />
-        {click && <Dropdown />}
-      </Div1>
-      <Div2>
-        <Div2Child>mokalulovelyo@gmail.com</Div2Child>
-        <Div2Child>{date}</Div2Child>
-        <Div2Child>{cTime}</Div2Child>
-      </Div2>
-    </NavStyles>
+    <>
+      <NavStyles>
+        <Div1>
+          <div className="container-title">
+            <span>Lovelyo Yeremia</span>
+          </div>
+          <Div1Child>File</Div1Child>
+          <Div1Child>Help</Div1Child>
+          <Div1Child>Settings</Div1Child>
+          <HiArrowCircleDown
+            className="icon-arrow"
+            onClick={() => setClick(!click)}
+          />
+        </Div1>
+        <Div2>
+          <Div2Child>mokalulovelyo@gmail.com</Div2Child>
+          <Div2Child>{date}</Div2Child>
+          <Div2Child>{cTime}</Div2Child>
+        </Div2>
+      </NavStyles>
+      {click && <Dropdown />}
+    </>
   );
 }
 
